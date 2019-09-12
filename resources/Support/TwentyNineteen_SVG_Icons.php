@@ -1,4 +1,7 @@
 <?php
+
+namespace Theme\Support;
+
 /**
  * SVG Icons class
  *

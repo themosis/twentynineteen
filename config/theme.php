@@ -25,6 +25,7 @@ return [
     */
     'providers' => [
         Theme\Providers\AssetServiceProvider::class,
+        Theme\Providers\ViewServiceProvider::class,
         Theme\Providers\RouteServiceProvider::class
     ],
     /*

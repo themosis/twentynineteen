@@ -22,5 +22,8 @@ class AssetServiceProvider extends ServiceProvider
     {
         /** @var ThemeManager $theme */
         $theme = $this->app->make('wp.theme');
+
+        Asset::add('theme-style', 'css/style.css', [], $theme->getHeader('version'), 'screen')->to();
+        Asset::add('theme-print', 'css/print.css', [], $theme->getHeader('version'), 'print')->to();
     }
 }

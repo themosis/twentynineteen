@@ -3,6 +3,7 @@
 namespace Theme\Providers;
 
 use Themosis\Core\Support\Providers\RouteServiceProvider as ServiceProvider;
+use Themosis\Core\ThemeManager;
 use Themosis\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
@@ -24,13 +25,11 @@ class RouteServiceProvider extends ServiceProvider
      */
     public function map()
     {
-        $themeName = ltrim(
-            str_replace(themes_path(), '', realpath(__DIR__.'/../../')),
-            '\/'
-        );
+        /* @var ThemeManager $theme */
+        $theme = app('wp.theme');
 
         Route::middleware('web')
             ->namespace($this->namespace)
-            ->group(themes_path($themeName.'/routes.php'));
+            ->group(themes_path($theme->getDirectory().'/routes.php'));
     }
 }
