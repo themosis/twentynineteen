@@ -6,10 +6,16 @@
     "url": "https://github.com/WordPress/twentynineteen/issues"
   },
   "homepage": "https://github.com/WordPress/twentynineteen#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/themosis/twentynineteen"
+  },
+  "license": "GPL-2.0-or-later",
   "devDependencies": {
     "@wordpress/browserslist-config": "^2.2.2",
     "autoprefixer": "^9.1.5",
     "cross-env": "^5.2.1",
+    "fibers": "^4.0.1",
     "laravel-mix": "^4.1.4",
     "node-sass": "^4.12.0",
     "postcss-cli": "^6.0.1",
