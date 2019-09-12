@@ -53,57 +53,57 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	## Captions
 	## Galleries
 --------------------------------------------------------------*/
-@import "sass/variables-site/variables-site";
-@import "sass/mixins/mixins-master";
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
 
 /* Normalize */
 
-@import "sass/normalize";
+@import "normalize";
 
 /* Typography */
 
-@import "sass/typography/typography";
+@import "typography/typography";
 
 /* Elements */
 
-@import "sass/elements/elements";
+@import "elements/elements";
 
 /* Forms */
 
-@import "sass/forms/forms";
+@import "forms/forms";
 
 /* Navigation */
 
-@import "sass/navigation/navigation";
+@import "navigation/navigation";
 
 /* Accessibility */
 
-@import "sass/modules/accessibility";
+@import "modules/accessibility";
 
 /* Alignments */
 
-@import "sass/modules/alignments";
+@import "modules/alignments";
 
 /* Clearings */
 
-@import "sass/modules/clearings";
+@import "modules/clearings";
 
 /* Layout */
 
-@import "sass/layout/layout";
+@import "layout/layout";
 
 /* Content */
 
-@import "sass/site/site";
+@import "site/site";
 
 /* Widgets */
 
-@import "sass/site/secondary/widgets";
+@import "site/secondary/widgets";
 
 /* Blocks */
 
-@import "sass/blocks/blocks";
+@import "blocks/blocks";
 
 /* Media */
 
-@import "sass/media/media";
+@import "media/media";

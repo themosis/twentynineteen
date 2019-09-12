@@ -12,4 +12,7 @@ let mix = require('laravel-mix');
  */
 mix.setPublicPath('dist');
 
-mix.sass('assets/sass/style.scss', 'dist/css/style.css');
+mix.sass('assets/sass/style.scss', 'dist/css/style.css')
+    .sass('assets/sass/style-editor.scss', 'dist/css/style-editor.css')
+    .sass('assets/sass/style-editor-customizer.scss', 'dist/css/style-editor-customizer.css')
+    .sass('assets/sass/print.scss', 'dist/css/print.css');
