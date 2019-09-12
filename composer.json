@@ -1,0 +1,16 @@
+{
+  "name": "themosis/twentynineteen",
+  "description": "WordPress 2019 default theme designed to show off the power of the block editor.",
+  "keywords": ["themosis", "wordpress", "one-column", "flexible-header", "accessibility-ready", "custom-colors", "custom-menu", "custom-logo", "editor-style", "featured-images", "footer-widgets", "rtl-language-support", "sticky-post", "threaded-comments", "translation-ready"],
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "wordpressdotorg"
+    }
+  ],
+  "type": "wordpress-theme",
+  "require": {
+    "php": ">=7.2",
+    "composer/installers": "~1.7"
+  }
+}
