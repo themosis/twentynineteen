@@ -12,12 +12,15 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::share('blogname', get_bloginfo('name'));
+        View::share([
+            'blogname' => get_bloginfo('name'),
+            'blogdescription' => get_bloginfo('description', 'display')
+        ]);
 
-        View::composer('layouts.main', function ($view) {
-            twentynineteen_post_thumbnail();
-            the_post();
-
+        View::composer([
+            'layouts.main',
+            'template-parts.header.entry-postheader'
+        ], function ($view) {
             $discussion = ! is_page() && twentynineteen_can_show_post_thumbnail()
                 ? twentynineteen_get_discussion_data()
                 : null;
@@ -26,7 +29,10 @@ class ViewServiceProvider extends ServiceProvider
                 ? 'entry-header has-discussion'
                 : 'entry-header';
 
-            $view->with('classes', $classes);
+            $view->with([
+                'classes' => $classes,
+                'discussion' => $discussion
+            ]);
         });
     }
 }

@@ -16,6 +16,10 @@
         </div>
         @if(is_singular() && twentynineteen_can_show_post_thumbnail())
             <div class="site-featured-image">
+                <?php
+                    twentynineteen_post_thumbnail();
+                    the_post();
+                ?>
                 <div class="{{ $classes }}">
                     @template('template-parts.header.entry', 'postheader')
                 </div>

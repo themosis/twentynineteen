@@ -150,13 +150,13 @@ return [
     /* ----------------------------------------------------------------------------------------------- */
     // Custom Background
     /* ----------------------------------------------------------------------------------------------- */
-    'custom-background' => [
-        'default-color' => 'ffffff',
-        'default-image' => '',
-        //    'wp-head-callback' => '_custom_background_cb',
-        //    'admin-head-callback' => '',
-        //    'admin-preview-callback' => ''
-    ],
+    //'custom-background' => [
+        // 'default-color' => 'ffffff',
+        // 'default-image' => '',
+        // 'wp-head-callback' => '_custom_background_cb',
+        // 'admin-head-callback' => '',
+        // 'admin-preview-callback' => ''
+    //],
 
     /* ----------------------------------------------------------------------------------------------- */
     // Custom Header
