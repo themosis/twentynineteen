@@ -8,7 +8,31 @@
  * @subpackage Twenty_Nineteen
  * @since 1.0.0
  */
+
 use Themosis\Core\Application;
+
+/*
+|--------------------------------------------------------------------------
+| Theme compatibility
+|--------------------------------------------------------------------------
+|
+| Check the current WordPress version before enabling the theme.
+|
+*/
+if (version_compare($GLOBALS['wp_version'], '4.7', '<')) {
+    require get_template_directory() . '/helpers/back-compat.php';
+    return;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Twenty Nineteen helpers
+|--------------------------------------------------------------------------
+|
+| Include theme specific helpers.
+|
+*/
+include get_template_directory() . '/helpers/colors.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -21,7 +45,6 @@ use Themosis\Core\Application;
 |
 */
 $theme = (Application::getInstance())->loadTheme(__DIR__, 'config');
-
 
 /*
 |--------------------------------------------------------------------------

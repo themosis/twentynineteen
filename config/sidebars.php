@@ -6,13 +6,12 @@
  */
 return [
     [
-        'name' => __('First sidebar', THEME_TD),
+        'name' => __('Footer', THEME_TD),
         'id' => 'sidebar-1',
-        'description' => __('Area of first sidebar', THEME_TD),
-        'class' => 'custom',
-        'before_widget' => '<div>',
-        'after_widget' => '</div>',
-        'before_title' => '<h2>',
+        'description' => __('Add widgets here to appear in your footer.', THEME_TD),
+        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+        'after_widget' => '</section>',
+        'before_title' => '<h2 class="widget-title">',
         'after_title' => '</h2>',
     ]
 ];
