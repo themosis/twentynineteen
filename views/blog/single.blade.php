@@ -4,7 +4,7 @@
     <section id="primary" class="content-area">
         <main id="main" class="site-main">
             @loop
-                @template('template-parts.content.content', 'single');
+                @template('template-parts.content.content', 'single')
 
                 @if(is_singular( 'attachment' ))
                     {{-- Parent post navigation. --}}
